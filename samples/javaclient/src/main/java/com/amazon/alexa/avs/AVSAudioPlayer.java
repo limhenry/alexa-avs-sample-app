@@ -356,6 +356,8 @@ public class AVSAudioPlayer {
                         if (!attemptedUrls.contains(mrl)) {
                             log.info("Playing {}", mrl);
                             mediaPlayer.playMedia(mrl);
+                            mediaPlayer.setVolume(100);
+			                mediaPlayer.getVolume();                            
                             return;
                         }
                     }
@@ -393,6 +395,8 @@ public class AVSAudioPlayer {
                 for (String mrl : streamUrls) {
                     if (!attemptedUrls.contains(mrl)) {
                         mediaPlayer.playMedia(mrl);
+                        mediaPlayer.setVolume(100);
+			            mediaPlayer.getVolume();                               
                         return;
                     }
                 }
